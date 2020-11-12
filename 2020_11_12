@@ -1,0 +1,106 @@
+#include <stdio.h> //必须写
+#include <windows.h>//仅仅是为了让程序暂停一下，让我们看到结果
+
+//#pragma warning(disable:4996)
+//int g_val = 2019; //在代码块外部，全局
+//void show()
+//{
+//	int a = 10;
+//	printf("show run!\n");
+//}
+//{代码块}
+//#define RED 10 //宏定义:见名知意， 便于维护
+
+//int集合
+enum{
+	RED=-100, //0
+	YELLOW,
+	BLACK=300,
+	BLUE
+};
+
+int main() //main,mian
+{
+	char str1[16] = "bit";
+	char str2[16] = { 'b', 'i', 't'};
+	char str3[16] = { 'b', 'i', 't' , '\0'};
+
+	printf("%s\n", str1);
+	printf("%s\n", str2);
+	printf("%s\n", str3);
+
+
+
+
+	//str[6] = 'X';
+	//printf("%s\n", str);
+	//C字符串默认以 '\0' 结尾（'\0',0,NULL, '0'）?
+	//printf("%d\n", sizeof("abcd"));
+	//printf("%d\n", sizeof("a"));
+	//printf("%d\n", sizeof(""));
+
+
+	//printf("%d\n", sizeof(RED));
+	//printf("%d\n", RED);
+	//printf("%d\n", YELLOW);
+	//printf("%d\n", BLACK);
+	//printf("%d\n", BLUE);
+	//定义变量：分两步，1：开辟空间 2: 写入对应的数据
+	//初始化:空间开辟好，里面的数据与生俱来是某个值
+	//const int  a = 100; //初始化
+	////赋值：第二次进行主动赋值
+	//a = 200;     //赋值
+
+	////const: 用const修饰变量定义，被修饰的变量，不能被直接修改。
+	//printf("%d\n", a);
+
+	//BLUE = 100;
+	//int a = RED;
+	//int b = YELLOW;
+	//printf("%d\n", a);
+	//printf("%d\n", b);
+	//int c = RED;
+	//int a = RED;
+	//int b = RED;
+	//int d = RED;
+	//int a = MAX;
+	//int a = 100;
+	//1;
+	//'a';
+	//"hello world";
+	//int a = 1;
+	//float pi = 3.14;
+    //show();
+	//int num1 = 0;
+	//int num2 = 0;
+	//printf("请输入两个数据: ");
+	//scanf("%d %d", &num1, &num2); //&变量名？变量的地址
+	//int result = num1 + num2;
+	//printf("%d+%d=%d\n", num1, num2, result);
+	//printf("num1: %d, num2: %d\n", num1, num2);
+	//不建议将全局变量和局部变量设置成为同名的！！
+	//int val = 2020;
+	//g = 2021;
+	//printf("value: %d\n", g);
+	//sizeof:关键字是用来进行类型大小计算的
+	//不同的类型，所占用的字节大小是不同的
+	//printf("char: %d\n", sizeof(char)); 
+	//printf("short: %d\n", sizeof(short));
+	//printf("int: %d\n", sizeof(int));
+	//printf("long: %d\n", sizeof(long));
+	//printf("long long: %d\n", sizeof(long long));
+	//printf("float: %d\n", sizeof(float));
+	//printf("double: %d\n", sizeof(double));
+
+	////局部变量
+	//char c = 'x';
+	//int i = 10;
+	//double d = 3.14;
+
+
+
+
+	//printf("hello world!\n");
+	system("pause");//仅仅是为了让程序暂停一下，让我们看到结果
+	return 0;
+}
